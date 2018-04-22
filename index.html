@@ -14,12 +14,18 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
 </head>
 <style>
  h1 {
-   color: rgb(10, 22, 18);
+   color: white;
    font-family: arial;
    font-size: 50px;
-   border-bottom: 3px solid rgb(26, 41, 48);
+   border-bottom: 3px solid white;
+ }
+ h2 {
+ 	border-bottom: 2px solid white;
  }
  body {
+   display: block;
+   margin: 0 auto;
+   width: 800px;
    background-color: rgb(26, 41, 48);
    font-family: arial;
  }
@@ -31,20 +37,39 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
 }
 
  div {
-    background-color: rgb(197, 193, 192);
+    background-color:rgb(26, 41, 48);
     width: 300px;
     border: 25px solid rgb(247, 206, 62);
     padding: 25px;
     margin: 25px;
+    color: white;
  }
  #hero {
  	width: 400px;
  }
+ .polygon {
+ 	background-image: url("./images/trianglify.svg");
+ 	width: 100%;
+ 	margin: 0;
+ 	margin-top: 25px;
+ 	padding: 0;
+ 	padding-top: 25px;
+ }
  footer {
  	color: white;
  }
+ table {
+	margin: 0 auto;
+ }
+ td {
+ 	text-align: left;
+ 	padding: 3px;
+ 	padding-right: 10px;
+ 	padding-left: 15px;
+ }
 </style>
 <body>
+	<div class="polygon">
 	<!--Hero Main Landing-->
     <div class="section" id="hero">
         <h1>Emma Rivera</h1>
@@ -54,6 +79,34 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
         </p>
     </div>           
 	
+	<!--Skills Summary-->
+        <div class="section" id="skills">
+            <h2>Technical Skills</h2>
+                <h3>Languages</h3>
+                <table>
+                    <tr>
+                        <th>Language</th>
+                        <th>Skill Level</th>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Familiar</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Familiar</td>
+                    </tr>
+                    <tr>
+                        <td>Bash</td>
+                        <td>Familiar</td>
+                    </tr>
+                </table>
+        </div>
+
 	<!--Education-->
         <div class="section" id="education">
             <h2>Education</h2>
@@ -77,6 +130,12 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
             <a href="mailto:erive011@ucr.edu?Subject=Recruiting" target="_blank" title="Email"><img src="images/emailimage.png" height="50" alt="Resume"></a>
         </div>
 
+	<!-- Footer -->
+	    <footer>
+	    	Made with 💕 by Emma Rivera
+	    </footer>
+	</div>
+
 	<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script type="text/rocketscript">
         window.onblur = function() {
             document.title = 'Don\'t leave me!';
@@ -86,10 +145,5 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
             document.title = 'Emma Rivera';
         }
     </script>
-    
-	<!-- Footer -->
-	    <footer>
-	    	Made with 💕 by Emma Rivera
-	    </footer>
 </body>
 </html>
