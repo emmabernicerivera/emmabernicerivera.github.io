@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
 
-<!-- <script type="text/javascript">
-//<![CDATA[
-window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5dffe1-1524355119-1800"};
-//]]>
-</script> -->
-<!-- <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/935cb224/cloudflare-static/rocket.min.js"></script> -->
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Emma Rivera</title>
 	<style>
 	 h1 {
-	   color: rgb(77, 80, 81);
+	   color: white;
 	   font-family: arial;
 	   font-size: 50px;
-	   border-bottom: 3px solid rgb(77, 80, 81);
+	   border-bottom: 3px solid white;
 	 }
 	 h2 {
-	 	border-bottom: 2px solid rgb(77, 80, 81);
+	 	border-bottom: 2px solid white;
+	 	color: white;
 	 }
 	 body {
+	   background-color: #C5C1C0;
+	   border: 25px;
+	   border-style: double;
+	   border-color: rgb(26, 41, 48);
+	   position: relative;
 	   display: block;
 	   margin: 0 auto;
 	   width: 800px;
-	   background-color: rgb(255, 255, 255);
+	   /*background-color: rgb(255, 255, 255);*/
 	   font-family: arial;
+	   border-left: : 20px;
+	   border-left-style: double; /*#F7CE3E*/
+	   border-left-color: rgb(26, 41, 48);
+	   border-right: : 20px;
+	   border-right-style: double;
+	   border-right-color: rgb(26, 41, 48);
 	 }
-
+	
 	.section {
 		display:block;
 		margin: 0 auto;
@@ -36,26 +42,35 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
 	}
 
 	 div {
+	 	background-color: #C5C1C0;
 	 	text-align: center;
-	    background-color:rgb(255, 255, 255);
+	    /*background-color:rgb(255, 255, 255);*/
 	    width: 300px;
 	    border: 3px solid rgb(77, 80, 81);
 	    padding: 25px;
 	    margin: 25px;
 	    color: rgb(77, 80, 81);
 	 }
+	 #skills {
+	 	width: 450px;
+	 }
 	 #hero {
 	 	width: 400px;
 	 }
+	 #menu {
+	 	width: 450px;
+	 }
 	 .polygon {
-	 	background-image: url("./images/trianglify3.svg");
 	 	background-size: cover;
 	 	border: none;
-	 	width: 100%;
+	 	width: 99%;
 	 	margin: 0;
 	 	margin-top: 25px;
+	 	margin-bottom: 25px;
 	 	padding: 0;
 	 	padding-top: 25px;
+	 	position: relative;
+	 	z-index: 10;
 	 }
 	 footer {
 	 	color: rgb(77, 80, 81);
@@ -70,20 +85,59 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
 	 	padding-left: 15px;
 	 }
 	 svg {
-	 	text-align: left;
-	 	/*z-index: 5;*/
-	 	position: absolute;
+	 	text-align: center;
+	 	position: relative;
+	 	z-index: 1;
 	 }
 	 ul {
 	 	text-align: left;
 	 }
+	 .dropbtn {
+	    background-color: lightgrey;
+	    color: white;
+	    padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	 }
+
+	 .dropbtn:hover, .dropbtn:focus {
+    	background-color: grey;
+	 }
+
+	 .dropdown {
+	    position: relative;
+	    display: inline-block;
+     }
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: white;
+	    min-width: 100px;
+	    overflow: auto;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	#picture {
+		border: none;
+	}
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown a:hover {background-color: #ddd}
+
+	.show {display:block;}
 	</style>
 </head>
 <body>
 	<!-- Animation -->          
-	<svg width="800px" height="164vh">
+	<!-- <svg width="1000px" height="164vh">
       <rect width="100%" height="100%" fill="#FFFFFF" fill-opacity="0.0" stroke="#231F20"/>
-    </svg>
+    </svg> -->
 	<div class="polygon">
 	<!--Hero Main Landing-->
     <div class="section" id="hero">
@@ -94,35 +148,58 @@ window.__cfRocketOptions = {byc:0,p:0,petok:"38d2f7974e1132fb18fd6755e8a67ad60a5
         </p>
     </div> 
     <!-- <canvas class="fireworks" width="818" height="1190" style="width: 409px; height: 595px;"></canvas> -->
+	<!-- Drop down bars -->
+		<!-- <div class="dropdown" id=menu>
+		<button onclick="myFunction()" class="dropbtn">Projects</button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#home">BoxBot</a>
+		    <a href="#about">CheckN</a>
+		    <a href="#contact">My Personal Website</a>
+		  </div>
+		<button onclick="myFunction()" class="dropbtn">Work Experience</button>
+		<div id="myDropdown" class="dropdown-content">
+		    <a href="work1">Facebook</a>
+		  </div>
+		</div>
 
+		<script>
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script> -->
+ 
 	<!--Skills Summary-->
         <div class="section" id="skills">
-            <h2>Technical Skills</h2>
-                <h3>Languages</h3>
-                <table>
-                    <tr>
-                        <th>Language</th>
-                        <th>Skill Level</th>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Familiar</td>
-                    </tr>
-                    <tr>
-                        <td>HTML/CSS</td>
-                        <td>Familiar</td>
-                    </tr>
-                    <tr>
-                        <td>Bash</td>
-                        <td>Familiar</td>
-                    </tr>
-                </table>
+        	<!-- <div class="section" id="picture"> -->
+        		<table>
+				    <tr>
+				        <td><img src="images/bm_2018_emma_rivera.png" alt="Emma Rivera" style="width:100%"></td>
+				        <td><h2>Technical Skills</h2>
+			                <h3>Languages</h3>
+			               		<p>C++</p>
+			               		<p>Python</p>
+			               		<p>HTML/CSS</p>
+			               		<p>Bash</p>
+               			</td>
+				    </tr>
+				</table>
         </div>
-
+	<!-- Picture --> 
+		
 	<!--Education-->
         <div class="section" id="education">
             <h2>Education</h2>
