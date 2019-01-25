@@ -1,246 +1,183 @@
+
 <!DOCTYPE html>
+
+
 <html lang="en">
+
+
 <head>
-
 	<meta charset="UTF-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+
 	<title>Emma Rivera</title>
-	<style>
-	 h1 {
-	   color: white;
-	   font-family: arial;
-	   font-size: 50px;
-	   border-bottom: 3px solid white;
-	 }
-	 h2 {
-	 	border-bottom: 2px solid white;
-	 	color: white;
-	 }
-	 body {
-	   background-color: #C5C1C0;
-	   border: 25px;
-	   border-style: double;
-	   border-color: rgb(26, 41, 48);
-	   position: relative;
-	   display: block;
-	   margin: 0 auto;
-	   width: 800px;
-	   /*background-color: rgb(255, 255, 255);*/
-	   font-family: arial;
-	   border-left: : 20px;
-	   border-left-style: double; /*#F7CE3E*/
-	   border-left-color: rgb(26, 41, 48);
-	   border-right: : 20px;
-	   border-right-style: double;
-	   border-right-color: rgb(26, 41, 48);
-	 }
-	a:hover {
-		opacity: 0.6;
-		transition: 0.2s ease;
-	}
 
-	.section {
-		display:block;
-		margin: 0 auto;
-		margin-bottom: 15px;
-	}
-
-	 div {
-	 	background-color: #C5C1C0;
-	 	text-align: center;
-	    /*background-color:rgb(255, 255, 255);*/
-	    width: 300px;
-	    border: 3px solid rgb(77, 80, 81);
-	    padding: 25px;
-	    margin: 25px;
-	    color: rgb(77, 80, 81);
-	 }
-	 #skills {
-	 	width: 450px;
-	 }
-	 #hero {
-	 	width: 400px;
-	 }
-	 #menu {
-	 	width: 450px;
-	 }
-	 .polygon {
-	 	background-size: cover;
-	 	border: none;
-	 	width: 99%;
-	 	margin: 0;
-	 	margin-top: 25px;
-	 	margin-bottom: 25px;
-	 	padding: 0;
-	 	padding-top: 25px;
-	 	position: relative;
-	 	z-index: 10;
-	 }
-	 footer {
-	 	color: rgb(77, 80, 81);
-	 }
-	 table {
-		margin: 0 auto;
-	 }
-	 td {
-	 	text-align: left;
-	 	padding: 3px;
-	 	padding-right: 10px;
-	 	padding-left: 15px;
-	 }
-	 svg {
-	 	text-align: center;
-	 	position: relative;
-	 	z-index: 1;
-	 }
-	 ul {
-	 	text-align: left;
-	 }
-	 .dropbtn {
-	    background-color: lightgrey;
-	    color: white;
-	    padding: 16px;
-	    font-size: 16px;
-	    border: none;
-	    cursor: pointer;
-	 }
-
-	 .dropbtn:hover, .dropbtn:focus {
-    	background-color: grey;
-	 }
-
-	 .dropdown {
-	    position: relative;
-	    display: inline-block;
-     }
-
-	.dropdown-content {
-	    display: none;
-	    position: absolute;
-	    background-color: white;
-	    min-width: 100px;
-	    overflow: auto;
-	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	    z-index: 1;
-	}
-	#picture {
-		border: none;
-	}
-	.dropdown-content a {
-	    color: black;
-	    padding: 12px 16px;
-	    text-decoration: none;
-	    display: block;
-	}
-	.dropdown a:hover {background-color: #ddd}
-
-	.show {display:block;}
+	<style>h1 { color: white; font-family: arial; font-size: 50px; border-bottom: 3px solid white; } h2 { border-bottom: 2px solid white; color: white; } body { background-color: #C5C1C0; border: 25px; border-style: double; border-color: rgb(26, 41, 48); position: relative; display: block; margin: 0 auto; width: 800px; /*background-color: rgb(255, 255, 255);*/ font-family: arial; border-left: : 20px; border-left-style: double; /*#F7CE3E*/ border-left-color: rgb(26, 41, 48); border-right: : 20px; border-right-style: double; border-right-color: rgb(26, 41, 48); } a:hover { opacity: 0.6; transition: 0.2s ease; } .section { display:block; margin: 0 auto; margin-bottom: 15px; } div { background-color: #C5C1C0; text-align: center; /*background-color:rgb(255, 255, 255);*/ width: 300px; border: 3px solid rgb(77, 80, 81); padding: 25px; margin: 25px; color: rgb(77, 80, 81); } #skills { width: 450px; } #hero { width: 400px; } #menu { width: 450px; } .polygon { background-size: cover; border: none; width: 99%; margin: 0; margin-top: 25px; margin-bottom: 25px; padding: 0; padding-top: 25px; position: relative; z-index: 10; } footer { color: rgb(77, 80, 81); } table { margin: 0 auto; } td { text-align: left; padding: 3px; padding-right: 10px; padding-left: 15px; } svg { text-align: center; position: relative; z-index: 1; } ul { text-align: left; } .dropbtn { background-color: lightgrey; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer; } .dropbtn:hover, .dropbtn:focus { background-color: grey; } .dropdown { position: relative; display: inline-block; } .dropdown-content { display: none; position: absolute; background-color: white; min-width: 100px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; } #picture { border: none; } .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; } .dropdown a:hover {background-color: #ddd} .show {display:block;}
 	</style>
 </head>
+
 <body>
-	<!-- Animation -->          
+	<!-- Animation -->
 	<!-- <svg width="1000px" height="164vh">
       <rect width="100%" height="100%" fill="#FFFFFF" fill-opacity="0.0" stroke="#231F20"/>
     </svg> -->
+
 	<div class="polygon">
-	<!--Hero Main Landing-->
-    <div class="section" id="hero">
-        <h1>Emma Rivera</h1>
-        <p id="keywords">
-            <span>University Honors Student</span> |
-            <span>Computer Science Major</span>
-        </p>
-    </div> 
-    <!-- <canvas class="fireworks" width="818" height="1190" style="width: 409px; height: 595px;"></canvas> -->
-	<!-- Drop down bars -->
-		<!-- <div class="dropdown" id=menu>
-		<button onclick="myFunction()" class="dropbtn">Projects</button>
-		  <div id="myDropdown" class="dropdown-content">
-		    <a href="#home">BoxBot</a>
-		    <a href="#about">CheckN</a>
-		    <a href="#contact">My Personal Website</a>
-		  </div>
-		<button onclick="myFunction()" class="dropbtn">Work Experience</button>
-		<div id="myDropdown" class="dropdown-content">
-		    <a href="work1">Facebook</a>
-		  </div>
+
+		<div class="section"
+			id="hero">
+			<h1>Emma Rivera</h1>
+
+			<p id="keywords">
+				<span>University Honors Student</span>|
+				<span>Computer Science Major</span>
+			</p>
 		</div>
+	
+		<!-- Skills Summary -->
 
-		<script>
-		function myFunction() {
-		    document.getElementById("myDropdown").classList.toggle("show");
-		}
+		<div class="section"
+			id="skills">
+			<!-- <div class="section" id="picture"> -->
 
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
+			<table>
 
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
-		</script> -->
- 
-	<!--Skills Summary-->
-        <div class="section" id="skills">
-        	<!-- <div class="section" id="picture"> -->
-        		<table>
-				    <tr>
-				        <td><img src="images/bm_2018_emma_rivera.png" alt="Emma Rivera" style="width:100%"></td>
-				        <td><h2>Technical Skills</h2>
-			                <h3>Languages</h3>
-			               		<p>C++</p>
-			               		<p>Python</p>
-			               		<p>HTML/CSS</p>
-               			</td>
-				    </tr>
-				</table>
-        </div>
-	<!-- Picture --> 
-		
-	<!--Education-->
-        <div class="section" id="education">
-            <h2>Education</h2>
-                <h3><a href="http://www.ucr.edu/" target="_blank">University of California, Riverside</a> (September 2016 - present)</h3>
-                    <h3>Computer Science B.S. (Graduating Class of 2020)</h3>
-                    <h4>GPA: 3.84</h4>
-                    <ul>
-                    	<li><strong>Software Construction</strong>(CS100)</li>
-                        <li><strong>Data Structures and Algorithms</strong>(CS14)</li>
-                        <li><strong>Machine Assembly Language and Computer Organization </strong>(CS 61)</li>
-                        <li><strong>C++ Object Oriented Programming </strong>(CS12)</li>
-                        <li><strong>Discrete Structures </strong>(CS11)</li>
-                    </ul>
-        </div>
+				<tbody>
 
-	<!--Contact Info Icon Tray-->
-     	<div class="section" id="contact">
-            <a href="images/EmmaRiveraResume2018.pdf" target="_blank" title="Resume"><img src="images/resumeimage.png" height="50" alt="Resume"></a>
-            <a href="https://github.com/EmmaBR" target="_blank" title="Github"><img src="images/githubim.svg" height="50" alt="Resume"></a>
-            <a href="https://www.linkedin.com/in/emma-rivera-a53974138/" target="_blank" title="Linkedin"><img src="images/linkedinim.png" height="50" alt="Resume"></a>
-            <a href="mailto:erive011@ucr.edu?Subject=Recruiting" target="_blank" title="Email"><img src="images/emailimage.png" height="50" alt="Resume"></a>
-        </div>
+					<tr>
 
-	<!-- Footer -->
-	    <footer>
-	    	Made with 💕 by Emma Rivera
-	    </footer>
+						<td>
+
+							<img src="images/bm_2018_emma_rivera.png"
+								alt="Emma Rivera"
+								style="width:100%">
+
+						</td>
+
+						<td>
+							<h2>Technical Skills</h2>
+							<p>C++</p>
+							<p>Python</p>
+							<p>HTML/CSS</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Picture -->
+		<!-- Education -->
+
+		<div class="section"
+			id="education">
+			<h2>Education</h2>
+
+			<h3>
+
+				<a href="http://www.ucr.edu/"
+					target="_blank">University of California, Riverside
+				</a>(September 2016 - present)
+			</h3>
+			<h3>Computer Science B.S. (Graduating Class of 2020)</h3>
+			<h4>GPA: 3.84</h4>
+
+			<ul>
+
+				<li>
+					<strong>Software Construction</strong>(CS100)
+				</li>
+
+				<li>
+					<strong>Data Structures and Algorithms</strong>(CS14)
+				</li>
+
+				<li>
+
+					<strong>Machine Assembly Language and Computer Organization
+					</strong>(CS 61)
+				</li>
+
+				<li>
+					<strong>C++ Object Oriented Programming</strong>(CS12)
+				</li>
+
+				<li>
+					<strong>Discrete Structures</strong>(CS11)
+				</li>
+			</ul>
+		</div>
+		<!-- Calendar -->
+		<!-- <div class="section" id="calendar">
+   	<h2>Want to meet?</h2>
+   	<h3>View my calendar <a herf="https://calendar.google.com/calendar/embed?src=emmabr.626%40gmail.com&ctz=America%2FLos_Angeles" target="_blank">here</a></h3>
+   </div> -->
+		<!-- Link to Calendar -->
+		<!-- https://calendar.google.com/calendar/embed?src=emmabr.626%40gmail.com&src=erive011%40ucr.edu&ctz=America%2FLos_Angeles -->
+		<!-- Contact Info Icon Tray -->
+
+		<div class="section"
+			id="contact">
+
+			<a href="images/EmmaRiveraResume2018.pdf"
+				target="_blank"
+				title="Resume">
+
+				<img src="images/resumeimage.png"
+					height="50"
+					alt="Resume">
+
+			</a>
+
+			<a href="https://github.com/EmmaBR"
+				target="_blank"
+				title="Github">
+
+				<img src="images/githubim.svg"
+					height="50"
+					alt="Resume">
+
+			</a>
+
+			<a href="https://www.linkedin.com/in/emma-rivera-a53974138/"
+				target="_blank"
+				title="Linkedin">
+
+				<img src="images/linkedinim.png"
+					height="50"
+					alt="Resume">
+
+			</a>
+
+			<a href="mailto:erive011@ucr.edu?Subject=Recruiting"
+				target="_blank"
+				title="Email">
+
+				<img src="images/emailimage.png"
+					height="50"
+					alt="Resume">
+
+			</a>
+		</div>
+		<!-- Footer -->
+
+		<footer>Made with 💕 by Emma Rivera
+		</footer>
 	</div>
-	<script>
-        window.onblur = function() {
-            document.title = 'Don\'t leave me!';
-        }
 
-        window.onfocus = function() {
-            document.title = 'Emma Rivera';
-        }
-    </script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" type="text/javascript"></script>
-     <script src="script.js"></script>
+	<script>
+		window.onblur = function() {
+			document.title = "Don't leave me!";
+		};
+
+		window.onfocus = function() {
+			document.title = 'Emma Rivera';
+		};
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+		type="text/javascript"><script src="script.js" /> </body> </html>
+	</script>
 </body>
 </html>
