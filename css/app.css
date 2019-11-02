@@ -591,8 +591,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
 .box {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
